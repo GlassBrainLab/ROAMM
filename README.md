@@ -6,7 +6,7 @@
 
 ## 📖 Overview
 
-ROAMM is a comprehensive dataset and analysis toolkit for studying reading behavior through simultaneous EEG and eye-tracking recordings with precisely temporal human attention annotations. This repository contains tools for preprocessing, analyzing, and visualizing multimodal data collected during reading tasks.
+ROAMM is a comprehensive dataset for studying reading behavior through simultaneous EEG and eye-tracking recordings with precisely temporal human attention annotations. This repository contains tools for preprocessing, analyzing, and visualizing multimodal data collected during reading tasks.
 
 ## 🧠 Dataset Description
 
