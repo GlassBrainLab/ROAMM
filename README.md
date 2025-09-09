@@ -97,34 +97,6 @@ plot_eeg_eyetracking_sync(
 - **Reading Labels**: First-pass reading, mind-wandering states
 - **Story Word Counts**: ~2,000-2,300 words per story
 
-## 🧪 Analysis Examples
-
-### 1. Basic Data Exploration
-```python
-# Load a single subject's data
-df = load_ml_data('s10014', 1)
-
-# Check data structure
-print(f"Data shape: {df.shape}")
-print(f"Time range: {df['time'].min():.2f} - {df['time'].max():.2f} seconds")
-print(f"First-pass reading: {df['first_pass_reading'].sum()} samples")
-```
-
-### 2. EEG Channel Analysis
-```python
-# Analyze EEG channels by brain region
-eeg_cols = [col for col in df.columns if any(ch in col for ch in ['Fp', 'F', 'C', 'P', 'O'])]
-regional_channels = get_representative_channels(eeg_cols, mode='comprehensive')
-```
-
-### 3. Eye Movement Analysis
-```python
-# Analyze fixation patterns
-fixations = df[df['is_fixation'] == 1]
-print(f"Total fixations: {len(fixations)}")
-print(f"Average fixation duration: {fixations.groupby('fixation_word').size().mean():.2f} samples")
-```
-
 
 ## 📄 License
 
