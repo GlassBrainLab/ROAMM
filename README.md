@@ -66,7 +66,7 @@ pip install mne scipy jupyter
    notebooks/file_preprocessing.ipynb
    ```
 
-## 🔧 Load Data
+## 🔧 Load Processed ML Data
 
 We put a lot of effort into making ROAMM easy to use, even if you’ve never worked with EEG or eye-tracking data before. Everything is pre-aligned and stored in **pandas DataFrames**, so you can load it with just a few lines of Python. 
 
